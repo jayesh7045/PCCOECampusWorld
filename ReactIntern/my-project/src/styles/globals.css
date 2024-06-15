@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.mt-10{
+    margin-top  : 12.5rem;
+}
+
+.h-20{
+    height: 11rem;
+}
+
+.h-80{
+    height: 38rem;
+}
+
+.h-81{
+    margin-top: 0;
+    height: 39rem;
+}
+.container {
+    max-width: 1540px;
+}
+
+@layer keyframes {
+    @keyframes slideLeftToRight {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+  }
+  
+  .container form::after{
+    position: absolute;
+    content :'';
+    border : 15px solid transparent;
+    border-bottom-color : black;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50px);
+
+}
+form h2{
+    font-size: 3em;
+    text-align: center;
+}
+form input{
+  border: none;
+  outline: none;
+  background: 1.5em;
+  border-bottom: 2px solid #222;
+
+
+}
+.w-10{
+  margin-left: 1%;
+  width: 40%;
+}
+
+  
